@@ -1,8 +1,8 @@
-# Nom final de la formation
+# Créer des API RESTFUL
 
-Ce dossier Repository est lié au cours [Nom final de la formation][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](www.linkedin.com/learning).
+Ce dossier Repository est lié au cours [Créer des API RESTFUL][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](www.linkedin.com/learning).
 
-![Nom final de la formation][lil-thumbnail-url] 
+![réer des API RESTFUL][lil-thumbnail-url] 
 
 DESCRIPTION DE LA FORMATION
 
@@ -21,19 +21,20 @@ La branche master correspond au code à la fin de la formation.
 
     Pour utiliser ces fichiers d’exercice, vous avez besoin de : 
     
-    [Liste des logiciels/dépendances utiles à la formation] 
+    * .NET 6 pour la backend en .NET
+    * NodeJS pour Cypress
     
     Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
     
-    [Instructions spécifiques au cours] 
+    Utilisez ensuite le CLI `dotnet` pour lancer le backend avec la commande `donet run`.
 
 
 
 ### Instructeur
 
-**Nom du formateur** 
+**Christophe GIGAX** 
 
- Retrouvez [Nom du formateur](https://www.linkedin.com/learning/instructors/) sur LinkedIn Learning.
+ Retrouvez [Christophe GIGAX](https://www.linkedin.com/learning/instructors/christophe-gigax) sur LinkedIn Learning.
 
 [lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
 [lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg	
