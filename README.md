@@ -1,10 +1,10 @@
 # Créer des API RESTFUL
 
-Ce dossier Repository est lié au cours [Créer des API RESTFUL][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](www.linkedin.com/learning).
+Ce dossier Repository est lié au cours [Créer des API RESTFUL][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](https://www.linkedin.com/learning).
 
-![réer des API RESTFUL][lil-thumbnail-url] 
+![Créer des API RESTFUL][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
+Facilitez la création et l'intégration de logiciels d'applications à l'aide des API RESTful, ou API REST. Découvrez ce cours qui va vous permettre de développer simplement ces interfaces de programmation pour vos applications web. Christophe Gigax, MVP Microsoft et architecte logiciel, vous fait part des bonnes pratiques à mettre en place, des pratiques de documentation et de testing automatique ainsi que de ses recommandations pour concevoir efficacement des API RESTful (API Representational State Transfer).
 
 ## Instructions
 
@@ -36,5 +36,5 @@ La branche master correspond au code à la fin de la formation.
 
  Retrouvez [Christophe GIGAX](https://www.linkedin.com/learning/instructors/christophe-gigax) sur LinkedIn Learning.
 
-[lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
-[lil-thumbnail-url]: https://cdn.lynda.com/course/2875095/2875095-1615224395432-16x9.jpg	
+[lil-course-url]: https://www.linkedin.com/learning/creer-des-api-restful
+[lil-thumbnail-url]: https://media-exp1.licdn.com/dms/image/C4E0DAQGfl6xmkPXXAg/learning-public-crop_675_1200/0/1643985338232?e=2147483647&v=beta&t=DjwXqbhNb5Cf9zQ_upkDtgzTaom7RSCe5G0nXTpxAjQ
