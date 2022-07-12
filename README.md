@@ -1,6 +1,6 @@
 # Créer des API RESTFUL
 
-Ce dossier Repository est lié au cours [Créer des API RESTFUL][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](https://www.linkedin.com/learning).
+Ce dossier Repository est lié au cours `Créer des API RESTFUL`. Le cours entier est disponible sur [LinkedIn Learning][lil-course-url].
 
 ![Créer des API RESTFUL][lil-thumbnail-url] 
 
