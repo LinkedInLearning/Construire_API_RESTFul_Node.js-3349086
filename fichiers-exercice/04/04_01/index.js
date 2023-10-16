@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const Post = require("./models");
 const app = express();
 const data = require("./posts");
 const PORT = process.env.PORT || 5000;
@@ -18,8 +19,14 @@ app.get("/posts", (req, res) => {
 });
 
 app.post("/posts/create", (req, res) => {
-  posts = [...posts, req.body];
-  res.send("new post successfully added");
+  try {
+    const post = new Post(req.body);
+    post.save();
+    res.send("new post successfully added");
+  } catch (e) {
+    console.log(e);
+    res.send(e);
+  }
 });
 
 app.listen(PORT, () => {
