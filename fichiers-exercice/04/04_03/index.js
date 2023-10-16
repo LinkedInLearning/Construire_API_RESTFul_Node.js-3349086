@@ -20,11 +20,24 @@ app.get("/posts", async (req, res) => {
   }
 });
 
-app.post("/posts/create", (req, res) => {
+app.post("/posts/create", async (req, res) => {
   try {
-    const post = new Post(req.body);
+    const post = await new Post(req.body);
     post.save();
     res.send("new post successfully added");
+  } catch (e) {
+    console.log(e);
+    res.send(e);
+  }
+});
+
+app.put("/posts/update/:id", async (req, res) => {
+  try {
+    const query = { _id: req.params.id };
+    const update = req.body;
+    const post = await Post.findOneAndUpdate(query, update);
+    post.save();
+    res.send("new post successfully edited");
   } catch (e) {
     console.log(e);
     res.send(e);
