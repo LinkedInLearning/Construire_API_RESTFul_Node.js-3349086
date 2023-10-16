@@ -44,6 +44,17 @@ app.put("/posts/update/:id", async (req, res) => {
   }
 });
 
+app.delete("/posts/delete/:id", async (req, res) => {
+  try {
+    const query = { _id: req.params.id };
+    const post = await Post.findOneAndDelete(query);
+    res.send("new post successfully deleted");
+  } catch (e) {
+    console.log(e);
+    res.send(e);
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
   mongoose.connect("mongodb://127.0.0.1:27017/database").then(() => {
