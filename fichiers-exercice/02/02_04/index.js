@@ -3,6 +3,8 @@ const app = express();
 const data = require("./posts");
 const PORT = process.env.PORT || 5000;
 
+app.use(express.json());
+
 let posts = [];
 
 app.get("/", (req, res) => {
@@ -15,7 +17,7 @@ app.get("/posts", (req, res) => {
 });
 
 app.post("/posts/create", (req, res) => {
-  posts = [...posts, ...data, req.body];
+  posts = [...posts, req.body];
   res.send("new post successfully added");
 });
 
