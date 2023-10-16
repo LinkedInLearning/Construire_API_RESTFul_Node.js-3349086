@@ -32,7 +32,7 @@
 
 ```
 curl -X POST \
-  http://localhost:5000/api/posts \
+  http://localhost:5000/posts/create \
   -H 'Content-Type: application/json' \
   -d '{
     "title": "new post",
