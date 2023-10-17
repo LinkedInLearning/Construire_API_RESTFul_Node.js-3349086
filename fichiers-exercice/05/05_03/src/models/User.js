@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
 
 const UserSchema = mongoose.Schema({
   firstName: {
@@ -40,6 +41,10 @@ const UserSchema = mongoose.Schema({
   },
 });
 
-Username.virtual("fullname").get(function () {
+UserSchema.virtual("fullname").get(function () {
   return this.firstName + " " + this.lastName;
 });
+
+UserSchema.methods.comparePassword = function (password) {
+  return bcrypt.compareSync(password, this.hashedPassword);
+};
