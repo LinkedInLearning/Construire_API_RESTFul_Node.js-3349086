@@ -4,6 +4,7 @@
 - **nodemon**: utilitaire qui permet de redémarrer automatiquement le serveur à chaque modification des fichiers javascript
 - **MongoDB Node.js Driver**: pilote Node.js pour MongoDB
 - **mongoDB Compass** [télécharger](https://www.mongodb.com/products/tools/compass): interface graphique pour MongoDB
+- **dotenv**: module qui charge les variables d'environnement à partir d'un fichier .env
 
 ## Installation :
 
