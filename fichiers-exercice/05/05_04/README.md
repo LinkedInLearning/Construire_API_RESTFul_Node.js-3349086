@@ -40,6 +40,57 @@ curl -X POST \
   }'
 ```
 
+### Requêtes POST pour créer un utilisateur http://localhost:5000/auth/register
+
+```
+curl -X POST \
+  http://localhost:5000/auth/register \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "firstName": "Diana",
+    "lastName": "L",
+    "username": "diana2023",
+    "email": "diana2023.com",
+    "password": "0./<>@5/#89"
+  }'
+```
+
+```
+curl -X POST \
+  http://localhost:5000/auth/register  \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "firstName": "Diana",
+    "lastName": "Linares",
+    "username": "diana2023",
+    "email": "diana2023@gmail.com",
+    "password": "0./<>@5/#89"
+  }'
+```
+
+### Requêtes POST pour connecter un utilisateur http://localhost:5000/api/posts/auth/login
+
+
+```
+curl -X POST \
+  http://localhost:5000/auth/login \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "email": "diana@gmail.com",
+    "password": "0./<>@5/#89"
+  }'
+```
+
+```
+curl -X POST \
+  http://localhost:5000/auth/login \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "email": "diana2023@gmail.com",
+    "password": "test123"
+  }'
+```
+
 ## Documentation API:
 
 [Documentation sur Postman](https://documenter.getpostman.com/view/19676848/2s9YR84CzK)
