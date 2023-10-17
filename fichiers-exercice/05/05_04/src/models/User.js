@@ -48,3 +48,5 @@ UserSchema.virtual("fullname").get(function () {
 UserSchema.methods.comparePassword = function (password) {
   return bcrypt.compareSync(password, this.hashedPassword);
 };
+
+module.exports = mongoose.model("User", UserSchema);
