@@ -28,7 +28,7 @@
 
 `curl http://localhost:5000/posts`
 
-### Envoi d'une requête POST à l'URL http://localhost:5000/posts/create
+### Requête POST à l'URL http://localhost:5000/posts/create
 
 ```
 curl -X POST \

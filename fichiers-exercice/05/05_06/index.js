@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const app = express();
 const router = express.Router();
 require("./src/routes")(router);
-// import userroutes
+require("./src/userroutes")(router);
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
