@@ -39,3 +39,8 @@ curl -X POST \
     "author": "Jane Smith"
   }'
 ```
+
+## Documentation API:
+
+[Documentation sur Postman](https://documenter.getpostman.com/view/19676848/2s9YR84CzK)
+
