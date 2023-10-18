@@ -56,5 +56,4 @@ UserSchema.methods.comparePassword = function (password) {
 UserSchema.methods.setAPIKey = function (password) {
   this.apiKey = bcrypt.hashSync(this.email, 10);
 };
-
 module.exports = mongoose.model("User", UserSchema);

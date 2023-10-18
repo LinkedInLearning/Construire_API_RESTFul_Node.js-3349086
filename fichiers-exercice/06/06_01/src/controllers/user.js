@@ -50,7 +50,7 @@ module.exports = {
       const user = await User.findOne({ email: req.user.email });
       user.setAPIKey();
       await user.save();
-      res.json({ apikey: user.apikey });
+      res.json({ apikey: user.apiKey });
     } catch (e) {
       res.json(e);
     }
