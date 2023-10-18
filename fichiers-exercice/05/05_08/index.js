@@ -13,7 +13,6 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 function authorize(req, res, next) {
-  console.log(req.headers.authorization.split(" ")[0]);
   if (
     req.headers &&
     req.headers.authorization &&
