@@ -16,9 +16,9 @@ function loginRequired(req, res, next) {
   next();
 }
 
-function apiKeyRequired(req, res, next) {
+async function apiKeyRequired(req, res, next) {
   const apiKey = req.header("x-api-key");
-  const users = User.find({});
+  const users = await User.find({});
   const account = users.find((user) => user.apiKey === apiKey);
 
   if (!apiKey || !account) {
@@ -28,6 +28,8 @@ function apiKeyRequired(req, res, next) {
     });
   }
   next();
+}
+;
 }
 
 module.exports = (router) => {
