@@ -16,7 +16,7 @@ function authorize(req, res, next) {
   if (
     req.headers &&
     req.headers.authorization &&
-    req.headers.authorization.split(" ")[0] === "JWT"
+    req.headers.authorization.split(" ")[0] === "Bearer"
   ) {
     jwt.verify(
       req.headers.authorization.split(" ")[1],
