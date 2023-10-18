@@ -101,6 +101,23 @@ curl -X POST \
   }'
 ```
 
+### Requêtes POST pour générer une nouvelle clé API http://localhost:5000/generateApiKey
+
+Load the .env file
+`cd to directory`
+`source .env`
+
+```
+curl -X POST \
+  http://localhost:5000/generateApiKey \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $BEARER_TOKEN" \
+  -d '{
+    "email": "diana2023@gmail.com"
+  }'
+
+```
+
 ## Documentation API:
 
 [Documentation sur Postman](https://documenter.getpostman.com/view/19676848/2s9YR84CzK)

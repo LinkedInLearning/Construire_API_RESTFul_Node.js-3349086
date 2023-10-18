@@ -4,6 +4,8 @@ const {
   findOnePostAndDelete,
 } = require("../controllers/post");
 
+const { generateAPIKey } = require("../controllers/user");
+
 function loginRequired(req, res, next) {
   if (!req.user) {
     res.status(401).json({
@@ -14,6 +16,7 @@ function loginRequired(req, res, next) {
 }
 
 module.exports = (router) => {
+  router.post("/generateAPIKey", loginRequired, generateAPIKey);
   router.post("/posts/create", loginRequired, createPost);
   router.put("/posts/update/:id", loginRequired, findOnePostAndUpdate);
   router.delete("/posts/delete/:id", loginRequired, findOnePostAndDelete);

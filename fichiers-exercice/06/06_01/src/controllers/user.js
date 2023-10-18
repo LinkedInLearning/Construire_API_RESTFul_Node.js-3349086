@@ -45,4 +45,14 @@ module.exports = {
       res.json(e);
     }
   },
+  async generateAPIKey(req, res) {
+    try {
+      const user = await User.findOne({ email: req.user.email });
+      user.setAPIKey();
+      await user.save();
+      res.json({ apikey: user.apikey });
+    } catch (e) {
+      res.json(e);
+    }
+  },
 };
