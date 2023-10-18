@@ -20,19 +20,30 @@ async function apiKeyRequired(req, res, next) {
   const apiKey = req.header("x-api-key");
   const users = await User.find({});
   const account = users.find((user) => user.apiKey === apiKey);
-
+  console.log(account);
   if (!apiKey || !account) {
     return res.status(403).json({
       code: 403,
       message: "You are not allowed. Register for a new Api key",
     });
   }
+
   next();
 }
 
 module.exports = (router) => {
   router.post("/generateApiKey", loginRequired, generateAPIKey);
   router.post("/posts/create", loginRequired, apiKeyRequired, createPost);
-  router.put("/posts/update/:id", loginRequired, findOnePostAndUpdate);
-  router.delete("/posts/delete/:id", loginRequired, findOnePostAndDelete);
+  router.put(
+    "/posts/update/:id",
+    loginRequired,
+    apiKeyRequired,
+    findOnePostAndUpdate
+  );
+  router.delete(
+    "/posts/delete/:id",
+    loginRequired,
+    apiKeyRequired,
+    findOnePostAndDelete
+  );
 };
