@@ -32,7 +32,7 @@ function apiKeyRequired(req, res, next) {
 
 module.exports = (router) => {
   router.post("/generateApiKey", loginRequired, generateAPIKey);
-  router.post("/posts/create", loginRequired, createPost);
+  router.post("/posts/create", loginRequired, apiKeyRequired, createPost);
   router.put("/posts/update/:id", loginRequired, findOnePostAndUpdate);
   router.delete("/posts/delete/:id", loginRequired, findOnePostAndDelete);
 };
