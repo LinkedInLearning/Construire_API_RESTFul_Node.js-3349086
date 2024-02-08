@@ -3,7 +3,9 @@ Ce dossier Repository est lié au cours [Construire des API RESTful avec Node.js
 
 ![Nom final de la formation][lil-thumbnail-url]
 
-DESCRIPTION DE LA FORMATION
+Dans cette formation de Sandy Ludosky, vous apprendrez à créer des API Restful avec Node.js. Après une introduction aux principes d'une API Restful, vous allez créer un serveur Node.js avec le framework Express.js, vous installerez une base de données MongoDB et vous y connecterez votre API. Puis, vous apprendrez à définir les opérations CRUD sur vos données, vous créerez des schémas pour les représenter dans MongoDB et vous les manipulerez avec votre API. Vous verrez également la création de documentation pour votre API. Enfin, vous apprendrez à sécuriser votre API REST, vous découvrirez les principes OWASP et vous mettrez en place une authentification et une autorisation pour votre API.
+
+Ce cours est intégré à GitHub Codespaces, un environnement de développement instantané « dans le nuage » qui offre toutes les fonctionnalités de votre IDE préféré sans nécessiter de configuration sur une machine locale. Avec Codespaces, vous pouvez vous exercer à partir de n'importe quelle machine, à tout moment, tout en utilisant un outil que vous êtes susceptible de rencontrer sur votre lieu de travail. Consultez la vidéo "Utilisation de Codespaces GitHub dans le cadre de ce cours" pour savoir comment démarrer.
 
 ## Instructions
 Ce dossier Repository a des branches pour chacune des vidéos du cours. Vous pouvez utiliser le menu des Branches sur GitHub afin d’accéder aux passages qui vous intéressent. Vous pouvez également rajouter `/tree/BRANCH_NAME` à l’URL afin d’accéder à la branche qui vous intéresse.
