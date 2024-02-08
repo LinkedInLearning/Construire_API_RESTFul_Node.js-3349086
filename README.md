@@ -27,7 +27,7 @@ La branche master correspond au code à la fin de la formation.
 
 ### Instructeur
 
-**Nom du formateur**
+**Sandy Ludosky**
 
  Retrouvez [Sandy Ludosky](https://www.linkedin.com/learning/instructors/sandy-ludosky) sur LinkedIn Learning.
 
