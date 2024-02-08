@@ -31,5 +31,5 @@ La branche master correspond au code à la fin de la formation.
 
  Retrouvez [Sandy Ludosky](https://www.linkedin.com/learning/instructors/sandy-ludosky) sur LinkedIn Learning.
 
-[lil-course-url]: https://www.linkedin.com/learning/building-a-graphql-project-with-react-js
+[lil-course-url]: https://www.linkedin.com/learning/construire-des-api-restful-avec-node-js
 [lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQE-hXyjF6OJ0g/learning-public-crop_675_1200/0/1706267751529?e=2147483647&v=beta&t=ZoXXDfWVtAFZhX9bRxhzZxXSUlHl0VzFpcjrvaMJ7Pc
