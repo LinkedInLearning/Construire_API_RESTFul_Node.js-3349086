@@ -1,5 +1,5 @@
-# Nom final de la formation
-Ce dossier Repository est lié au cours [Nom final de la formation][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](www.linkedin.com/learning).
+# Construire des API RESTful avec Node.js
+Ce dossier Repository est lié au cours [Construire des API RESTful avec Node.js][lil-course-url]. Le cours entier est disponible sur [LinkedIn Learning](www.linkedin.com/learning).
 
 ![Nom final de la formation][lil-thumbnail-url]
 
